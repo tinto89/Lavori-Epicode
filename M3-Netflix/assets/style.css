@@ -1,0 +1,43 @@
+:root {
+  --bs-secondary-color: rgba(255, 255, 255, 0.55);
+  --bs-heading-color: #fff;
+  --bs-body-color: #fff;
+}
+
+body {
+  background-color: #141414;
+}
+
+main button {
+  background-color: black;
+}
+
+.logo {
+  width: 100px;
+}
+
+#kids {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: white;
+  padding-top: 15px;
+}
+
+main,
+#footer {
+  padding-left: 80px;
+}
+
+.movie {
+  transition: 0.5s;
+  width: auto;
+}
+
+.movie:hover {
+  transform: scale(1.1);
+}
+
+#footer,
+#serviceButton {
+  font-size: 0.7rem;
+}
