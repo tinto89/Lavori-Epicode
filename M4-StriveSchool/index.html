@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Fake E-Commerce</a>
         <button
@@ -29,24 +29,27 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="./backoffice.html">Add Products</a>
+              <a class="nav-link" href="./backoffice.html"
+                >Add Products Backoffice</a
+              >
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form class="d-flex" role="search" id="searchBar">
             <input
               class="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
+              name="searchInput"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-primary" type="submit">
               Search
             </button>
           </form>
         </div>
       </div>
     </nav>
-    <main class="container">
+    <main class="container-fluid m-5">
       <div class="row" id="products"></div>
     </main>
     <script src="index-script.js"></script>
