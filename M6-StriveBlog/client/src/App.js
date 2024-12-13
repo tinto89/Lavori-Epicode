@@ -5,16 +5,23 @@ import Home from "./views/home/Home";
 import Blog from "./views/blog/Blog";
 import NewBlogPost from "./views/new/New";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AuthorsList from "./components/authors/AuthorsList";
+import AuthorCard from "./components/authors/AuthorCard";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
     <Router>
       <NavBar />
-      <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/blog/:id" element={<Blog />} />
-        <Route path="/new" element={<NewBlogPost />} />
-      </Routes>
+      <Container style={{ marginTop: "150px" }}>
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/blog/:id" element={<Blog />} />
+          <Route path="/new" element={<NewBlogPost />} />
+          <Route path="/authors" element={<AuthorsList />} />
+          <Route path="/authors/:id" element={<AuthorCard />} />
+        </Routes>
+      </Container>
       <Footer />
     </Router>
   );
