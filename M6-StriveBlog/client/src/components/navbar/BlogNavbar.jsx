@@ -3,7 +3,7 @@ import { Button, Container, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./styles.css";
-const NavBar = (props) => {
+const NavBar = ({ setSearchValue }) => {
   return (
     <Navbar expand="lg" className="blog-navbar" fixed="top">
       <Container className="justify-content-between">

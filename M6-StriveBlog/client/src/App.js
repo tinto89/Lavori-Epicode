@@ -5,8 +5,8 @@ import Home from "./views/home/Home";
 import Blog from "./views/blog/Blog";
 import NewBlogPost from "./views/new/New";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AuthorsList from "./components/authors/AuthorsList";
-import AuthorCard from "./components/authors/AuthorCard";
+import AuthorsList from "./views/authors/AuthorsList";
+import AuthorCard from "./views/authors/AuthorCard";
 import { Container } from "react-bootstrap";
 
 function App() {

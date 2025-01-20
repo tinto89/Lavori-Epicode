@@ -9,7 +9,7 @@ server.use(express.json());
 server.use("/api/authors", authorRoute);
 // Connessione a MongoDB
 mongoose
-  .connect("mongodb://127.0.0.1:27017/striveBlogAuthorsDB")
+  .connect("mongodb://127.0.0.1:27017/striveBlogDB")
   .then(() => console.log("MongoDB database connected"))
   .catch((err) => console.log("MongoDB connection error:", err));
 // Avvio del server
